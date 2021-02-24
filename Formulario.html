@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title>Formulario</title>
+    <link href="style.css" type="text/css" rel="Stylesheet">
+    <meta charset="UTF-8">
+</head>
+<body>
+
+    <h1>Formulário</h1>
+<fieldset>
+
+    <fieldset><legend>Indentificação do utilizador</legend>
+       <p> Nome: <input type="text" name="nome" id="nome" size="50" placeholder="Nome Completo"></p>
+       <p> Email: <input type="email" name="email" size="50" placeholder="Email"></p>
+       <p> Password: <input type="password" name="Password" placeholder="Password"></p>
+        </form>
+    </fieldset>  
+
+    <fieldset><legend>Género</legend>
+       <input type="radio" name="Género" value="masculino"> Masculino
+       <input type="radio" name="Género" value="feminino"> Feminino
+    </fieldset>
+
+    <fieldset><legend> Data de Nascimento</legend>
+        <input type="date" name="data-nascimento">
+    </fieldset>
+
+    <fieldset><legend>Morada do utilizador</legend>
+        <p> Rua: <input type="text" name="rua" size="50" placeholder="Nome da Rua"></p>
+        <p> Número: <input type="number" name="numero" placeholder="Número"></p>
+        <p> Código Postal: <input type="number" name="cogpst" placeholder="Código Postal"></p>
+        <p> Localidade: <input type="text" name="Localidade" size="30" placeholder="Localidade" list="Localidade"></p>
+        <datalist id="Localidade">
+            <option value="Matosinhos"></option>
+            <option value="Maia"></option>
+            <option value="Trofa"></option>
+            <option value="Santo Tirso"></option>      
+        </datalist>
+    </fieldset>
+
+    <fieldset><legend>Observações</legend>
+        <p>Mensagem: </p><textarea input type="text" name="Mensagem" placeholder="Escreva uma Mensagem" list="Mensagem" rows="10" cols="90" ></textarea>
+    </fieldset>
+
+    <input type="button" id="enviar" value="Enviar" onclick="envio()">
+    <div id="texto1"></div>
+    <p><button><a href="CompraTudo2.html#">Voltar</button></p></a>
+    
+
+    <script>
+        function envio(){
+            var nome = window.document.getElementById('nome').value
+            var n = window.document.getElementById('texto1')
+
+            n.innerText = `Obrigado ${nome} pelo seu formulário!`
+        }
+    </script>
+    
+</fieldset>
+</body>
+</html>

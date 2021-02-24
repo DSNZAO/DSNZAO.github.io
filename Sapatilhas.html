@@ -1,0 +1,52 @@
+<html>
+    <head>
+         <meta charset="UTF-8"> <!meta charset="ISO-8859-1">
+         <title> COMPRA TUDO</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1> COMPRA TUDO - Sapatilhas</h1>
+        <a href="#" onclick="menu()" class="check">&#9776</a>
+        <nav id="menu1">
+			<ul>
+                <a href="#"onclick="menu2()">&#9776</a>
+                <a href="CompraTudo2.html">INICIO</a>
+				<a href="Sobre.html">SOBRE</a>
+				<a href="Contactos.html">CONTACTOS</a> 
+
+			</ul> 
+        </nav>
+
+        <center><table>
+        <tr>
+        <th bgcolor=black> Yeezy Boost 350 V2 - 1200€ </th> 
+        </tr>
+
+        Quantidade:
+        <input type="number" name="n1" id="n1">
+        <input type="button" name="paga" id="paga" value="paga" onclick="pagar()">
+        <div id="res"></div>
+
+        <script>
+			function menu(){
+				document.getElementById('menu1').style.width='250px';
+			}
+			function menu2(){
+				document.getElementById('menu1').style.width='0';
+			}
+            function pagar(){
+                var num1 = Number(window.document.getElementById('n1').value)
+                var s = window.document.getElementById('res')
+
+                var res = num1 * 1200
+                s.innerText = `O preço a pagar é de: ${res}€`
+            }
+        </script>
+        
+
+       </center> </table>
+
+        <div class="sapatilhas1">
+        </div>
+    </body>
+</html>

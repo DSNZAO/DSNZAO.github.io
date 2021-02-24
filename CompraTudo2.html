@@ -1,0 +1,77 @@
+<html>
+
+	<head>
+		<meta charset="UTF-8"> <!meta charset="ISO-8859-1">
+		<title> COMPRA TUDO</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+
+		<h1> COMPRA TUDO </h1>
+		<a href="#" onclick="menu()" class="check">&#9776</a>
+	
+		<nav id="menu1">
+			<ul>
+				<a href="#"onclick="menu2()">&#9776</a></li>
+				<a href="Sobre.html">SOBRE</a>
+				<a href="Contactos.html">CONTACTO</a>
+				<a href="Formulario.html">FORMULARIO</a>
+
+			</ul> 
+		</nav>
+		<script>
+			function menu(){
+				document.getElementById('menu1').style.width='250px';
+			}
+			function menu2(){
+				document.getElementById('menu1').style.width='0';
+			}
+		</script>
+	<center><table>
+			
+			<tr>
+			<th bgcolor=black> CARROS</th>
+			<th bgcolor=black> CASAS</th>
+			<tr>
+
+			<tr>
+			<td><a href="Carros.html"><p id="carros"><img src="carros.jpg"></p></a>
+			<td><a href="Casas.html"><p id="casas"><img src="casas.jpg"></p></a>
+			</tr>
+			
+			<tr>
+			<th bgcolor=black class="legenda"> imagem retirada da internet</td>
+			<th bgcolor=black class="legenda"> imagem retirada da internet</td>
+			</tr>
+
+		
+	</center></table>
+	<p></p>
+	<p></p>
+	<center><table>
+			
+			<tr>
+			<th bgcolor=black> ROUPA </th>
+			<th bgcolor=black> SAPATILHAS </th>
+			<tr>
+
+			<tr>
+			<td><a href="Roupa.html"><p id="roupa"><img src="roupa.jpg"></p></a>
+			<td><a href="Sapatilhas.html"><p id="sapatilhas"><img src="sapatilha.jpg"></p></a>
+			</tr>
+			
+			<tr>
+			<th bgcolor=black class="legenda">imagem retirada da internet</td>
+			<th bgcolor=black class="legenda">imagem retirada da internet</td>
+			</tr>
+
+		
+	</center></table>
+
+	<p><audio controls>
+		<source src="audio.mp3" type="audio/mp3">
+	</audio></p>
+
+	</body>
+	
+</html>
